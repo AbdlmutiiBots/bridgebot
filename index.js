@@ -321,9 +321,5 @@ process.on("uncaughtException", (err) => {
   console.log("Caught exception: " + err);
 });
 
-setInterval(async () => {
-  await fetch("https://noctrlv-bot.abdlmutii.repl.co");
-}, 5000);
-
 bot.login(process.env.ds);
 gld.login();
